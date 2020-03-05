@@ -350,16 +350,16 @@ void test_ObliviousArrayAssign() {
 /***************************************************************************************
  * Main
  **************************************************************************************/
-/*
+
 int main() {
 //    test_ObliviousGreater();
 //    test_ObliviousLess();
-//    test_ObliviousEqual();
-//    test_ObliviousAssign();
+    test_ObliviousEqual();
+    test_ObliviousAssign();
     test_ObliviousSort();
     test_ObliviousArrayAccess();
-//    test_ObliviousArrayAssign(); 
+    test_ObliviousArrayAssign(); 
     return 0;
 }
-*/
+
 

@@ -6,7 +6,7 @@
 using namespace std::chrono;
 
 size_t N = 10000;
-size_t iters = 1000;
+size_t iters = N / 100;
 size_t k = rand() % N;
 
 void time_normal() {
@@ -17,8 +17,10 @@ void time_normal() {
 
     int x;
     auto start = high_resolution_clock::now();
-    for (int i = 0; i < iters; i++)
+    for (int i = 0; i < iters; i++) {
         x = A[k]; 
+        printf("");
+    }
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
     std::cout << "Time taken by normal access: "
